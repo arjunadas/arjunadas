@@ -1,5 +1,4 @@
 ### Hi there 👋
-*проверка курсива*
 
 [настройка разметки MarkDown](https://help.vivaldi.com/ru/services-ru/forum-ru/markdown-formatting/)
 <!--
