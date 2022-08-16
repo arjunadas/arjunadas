@@ -1,8 +1,11 @@
 ### Hi there 👋
 
-[настройка разметки MarkDown](https://help.vivaldi.com/ru/services-ru/forum-ru/markdown-formatting/)
-
-`это блок кода`
+ - [настройка разметки MarkDown 1](https://help.vivaldi.com/ru/services-ru/forum-ru/markdown-formatting/)
+ - [настройка разметки MarkDown 2](https://gist.github.com/Jekins/2bf2d0638163f1294637#CodeBlocks)
+- 🌱 I’m currently learning:
+[DevOps для эксплуатации и разработки](https://practicum.yandex.ru/promo/devops-course)
+- 📫 How to reach me:
+[https://t.me/ayakurnov](https://t.me/ayakurnov)
 
 <!--
 **arjunadas/arjunadas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
