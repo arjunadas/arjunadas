@@ -1,6 +1,9 @@
 ### Hi there 👋
 
 [настройка разметки MarkDown](https://help.vivaldi.com/ru/services-ru/forum-ru/markdown-formatting/)
+
+`это блок кода`
+
 <!--
 **arjunadas/arjunadas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
