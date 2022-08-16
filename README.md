@@ -4,6 +4,9 @@
  - [настройка разметки MarkDown 2](https://gist.github.com/Jekins/2bf2d0638163f1294637#CodeBlocks)
 - 🌱 I’m currently learning:
 [DevOps для эксплуатации и разработки](https://practicum.yandex.ru/promo/devops-course)
+
+![после окончания 2ой главы](/images/progress-bar.png)
+
 - 📫 How to reach me:
 [https://t.me/ayakurnov](https://t.me/ayakurnov)
 
