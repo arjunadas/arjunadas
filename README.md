@@ -1,26 +1,90 @@
-### Hi there 👋
+# что внутри
+# playbook для ansible
+# задача - обновить сертификат внутри докер контейнеров
 
- - [настройка разметки MarkDown 1](https://help.vivaldi.com/ru/services-ru/forum-ru/markdown-formatting/)
- - [настройка разметки MarkDown 2](https://gist.github.com/Jekins/2bf2d0638163f1294637#CodeBlocks)
-- 🌱 I’m currently learning:
-[DevOps для эксплуатации и разработки](https://practicum.yandex.ru/promo/devops-course)
+настроить копирование сертификатов средствами Ansible на сервера 
 
-![после окончания 2ой главы](/images/progress-bar.png)
+dev1 172.30.58.140
+dev2 172.30.58.141
+dev3 172.30.58.143
+ 
 
-- 📫 How to reach me:
-[https://t.me/ayakurnov](https://t.me/ayakurnov)
+master host (с которого будет Push ) DEV11 - 172.30.58.123
 
-<!--
-**arjunadas/arjunadas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# содержимое плейбука
+nano /etc/ansible/playbooks/update_cert_on_dockers.yaml
 
-Here are some ideas to get you started:
+- hosts: dev_mlservice
+  tasks: 
+    - name: Main block
+      block: 
+        - name: Install 7z
+          apt: name=p7zip-full update_cache=yes
+          tags: 
+            - install
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+        - name: Create directory for cert
+          file: 
+            path: /opt/certupdate/tempcert
+            state: directory
+          tags: 
+            - mkdir
+
+        - name: Download cert
+          get_url: 
+            url: https://site.ru/cert.dll
+            dest: /opt/certupdate/cert.7z
+          tags: 
+            - wget
+
+        - name: Unzip
+          shell: /usr/bin/7z -y x -p{{ pass_for_zip }} /opt/certupdate/cert.7z -o/opt/certupdate/tempcert/
+          tags: 
+            - unzip
+
+        - name: Copy script
+          copy: 
+            src: /etc/ansible/scripts/restart-docker.sh
+            dest: /tmp/restart-docker.sh
+            remote_src: no
+            mode: 0755
+            owner: root
+            group: root
+          tags: 
+            - copy_script
+
+        - name: Run script = copy cert + restart docker
+          shell: /bin/bash /tmp/restart-docker.sh
+          tags: 
+            - run_script
+
+
+      become: true
+      become_user: root
+
+# содержимое скрипта
+nano /etc/ansible/scripts/restart-docker.sh
+
+#get all names of the running containers
+b=(`docker ps | awk '{print $ 13}' | tail -n +2`)
+#copy certificates into containers
+for name in ${b[@]}; do docker cp /opt/certupdate/tempcert/cert.pfx $name:/app ; done
+#restart all containers
+for name in ${b[@]}; do docker restart $name ; done
+
+# содержимое списка хостов и списка переменных
+nano /etc/ansible/hosts
+
+[dev_mlservice]
+#172.30.58.140
+172.30.58.141
+#172.30.58.143
+
+[dev_mlservice:vars]
+ansible_user=alexey
+pass_for_zip=123
+
+
+
+# запуск
+ansible-playbook /etc/ansible/playbooks/update_cert_on_dockers.yaml
