@@ -54,7 +54,7 @@ nano /etc/ansible/playbooks/update_cert_on_dockers.yaml
           tags: 
             - copy_script
 
-        - name: Run script = copy cert + restart docker
+        - name: Run script = restart docker
           shell: /bin/bash /tmp/restart-docker.sh
           tags: 
             - run_script
