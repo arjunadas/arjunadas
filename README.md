@@ -14,6 +14,7 @@ master host (с которого будет Push ) DEV11 - 172.30.58.123
 # содержимое плейбука
 nano /etc/ansible/playbooks/update_cert_on_dockers.yaml
 
+```
 - hosts: dev_mlservice
   tasks: 
     - name: Main block
@@ -61,20 +62,21 @@ nano /etc/ansible/playbooks/update_cert_on_dockers.yaml
 
       become: true
       become_user: root
+```
 
 # содержимое скрипта
 nano /etc/ansible/scripts/restart-docker.sh
-
+```
 #get all names of the running containers
 b=(`docker ps | awk '{print $ 13}' | tail -n +2`)
 #copy certificates into containers
 for name in ${b[@]}; do docker cp /opt/certupdate/tempcert/cert.pfx $name:/app ; done
 #restart all containers
 for name in ${b[@]}; do docker restart $name ; done
-
+```
 # содержимое списка хостов и списка переменных
 nano /etc/ansible/hosts
-
+```
 [dev_mlservice]
 #172.30.58.140
 172.30.58.141
@@ -83,7 +85,7 @@ nano /etc/ansible/hosts
 [dev_mlservice:vars]
 ansible_user=alexey
 pass_for_zip=123
-
+```
 
 
 # запуск
