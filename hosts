@@ -1,0 +1,8 @@
+[dev_mlservice]
+172.30.58.140
+172.30.58.141
+172.30.58.143
+
+[dev_mlservice:vars]
+ansible_user=alexey
+pass_for_zip=123
