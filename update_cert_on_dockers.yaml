@@ -1,0 +1,47 @@
+- hosts: dev_mlservice
+  tasks: 
+    - name: Main block
+      block: 
+        - name: Install 7z
+          apt: name=p7zip-full update_cache=yes
+          tags: 
+            - install
+
+        - name: Create directory for cert
+          file: 
+            path: /opt/certupdate/tempcert
+            state: directory
+          tags: 
+            - mkdir
+
+        - name: Download cert
+          get_url: 
+            url: https://site.ru/cert.dll
+            dest: /opt/certupdate/cert.7z
+          tags: 
+            - wget
+
+        - name: Unzip
+          shell: /usr/bin/7z -y x -p{{ pass_for_zip }} /opt/certupdate/cert.7z -o/opt/certupdate/tempcert/
+          tags: 
+            - unzip
+
+        - name: Copy script
+          copy: 
+            src: /etc/ansible/scripts/restart-docker.sh
+            dest: /tmp/restart-docker.sh
+            remote_src: no
+            mode: 0755
+            owner: root
+            group: root
+          tags: 
+            - copy_script
+
+        - name: Run script = copy cert + restart docker
+          shell: /bin/bash /tmp/restart-docker.sh
+          tags: 
+            - run_script
+
+
+      become: true
+      become_user: root
