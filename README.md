@@ -10,8 +10,12 @@
 - 🔭 I’m currently working on:
 https://github.com/arjunadas/ansible
 
-- 💬 My certs:
+- 💬 My certs
+**Linux:**
 https://raw.githubusercontent.com/arjunadas/arjunadas/main/images/yodo.im_linux_certificate.png
+
+**Yandex cloud engineer:**
+https://raw.githubusercontent.com/arjunadas/arjunadas/main/images/yandex_cloud.png
 
 - 📫 How to reach me:
 [https://t.me/ayakurnov](https://t.me/ayakurnov)
