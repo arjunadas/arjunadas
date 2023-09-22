@@ -7,6 +7,9 @@
 
 ![после окончания 2ой главы](/images/progress-bar.png)
 
+- 💬 My certs ...
+![linux](/images/yodo.im_linux_certificate.png)
+
 - 📫 How to reach me:
 [https://t.me/ayakurnov](https://t.me/ayakurnov)
 
