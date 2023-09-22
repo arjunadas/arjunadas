@@ -7,6 +7,9 @@
 
 ![после окончания 2ой главы](/images/progress-bar.png)
 
+- 🔭 I’m currently working on ...
+https://github.com/arjunadas/ansible
+
 - 💬 My certs ...
 ![linux](/images/yodo.im_linux_certificate.png)
 
