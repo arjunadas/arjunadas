@@ -11,7 +11,7 @@
 https://github.com/arjunadas/ansible
 
 - 💬 My certs:
-![linux](/images/yodo.im_linux_certificate.png)
+https://raw.githubusercontent.com/arjunadas/arjunadas/main/images/yodo.im_linux_certificate.png
 
 - 📫 How to reach me:
 [https://t.me/ayakurnov](https://t.me/ayakurnov)
