@@ -8,7 +8,7 @@
 ![после окончания 2ой главы](/images/progress-bar.png)
 
 - 🔭 I’m currently working on:
-https://github.com/arjunadas/ansible
+[https://github.com/arjunadas/ansible](https://github.com/arjunadas/ansible_role/)
 
 - 💬 My certs
 
