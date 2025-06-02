@@ -1,22 +1,22 @@
 ### О себе:
 Языки программирования:
-Powershell
+Powershell,
 Bash
 
 Инструменты DevOps:
-Ansible
-Git
-Gitlab
-Docker / Docker compose
+Ansible,
+Git,
+Gitlab,
+Docker, Docker compose,
 K8s: Deckhouse
 
 BD:
-Postgresql
-MsSQL
+Postgresql,
+MsSQL,
 Redis
 
 Broker:
-rabbitmq
+Rabbitmq
 
 
 ### Hi there 👋
