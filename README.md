@@ -18,6 +18,15 @@ Redis
 Broker:
 Rabbitmq
 
+Мониторинг:
+Zabbix, Grafana
+
+VM:
+Hyper-V, VMware
+
+Инфраструктура:
+DNS, DHCP, AD и далее
+
 Стаж DevOps: 4 года
 
 Стаж сис-адм: 15+ лет
