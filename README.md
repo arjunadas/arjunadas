@@ -1,3 +1,24 @@
+### О себе:
+Языки программирования:
+Powershell
+Bash
+
+Инструменты DevOps:
+Ansible
+Git
+Gitlab
+Docker / Docker compose
+K8s: Deckhouse
+
+BD:
+Postgresql
+MsSQL
+Redis
+
+Broker:
+rabbitmq
+
+
 ### Hi there 👋
 
  - [настройка разметки MarkDown 1](https://help.vivaldi.com/ru/services-ru/forum-ru/markdown-formatting/)
