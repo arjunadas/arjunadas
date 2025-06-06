@@ -4,7 +4,7 @@ Powershell,
 Bash
 
 Инструменты DevOps:
-Ansible,
+Ansible, Ansible Molecule,
 Git,
 Gitlab,
 Docker, Docker compose,
