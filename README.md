@@ -42,7 +42,7 @@ DNS, DHCP, AD и далее
 ![после окончания 2ой главы](/images/progress-bar.png)
 
 - 🔭 I’m currently working on:
-[https://github.com/arjunadas/ansible](https://github.com/arjunadas/ansible_role/)
+[https://rebrainme.com/devops/](https://rebrainme.com/devops/)
 
 - 💬 My certs
 
