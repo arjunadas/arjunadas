@@ -25,7 +25,7 @@ VM:
 Hyper-V, VMware
 
 Инфраструктура:
-DNS, DHCP, AD и далее
+DNS, DHCP, AD, GPO, DFS и далее
 
 Стаж DevOps: 2 года
 
