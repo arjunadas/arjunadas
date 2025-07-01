@@ -8,7 +8,7 @@ Ansible, Ansible Molecule,
 Git,
 Gitlab,
 Docker, Docker compose,
-K8s: Deckhouse
+K8s Native, Deckhouse
 
 BD:
 Postgresql,
