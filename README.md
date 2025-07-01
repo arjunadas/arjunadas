@@ -42,7 +42,7 @@ DNS, DHCP, AD, GPO, DFS и далее
 - 💬 My certs:
 
 **Ansible:**
-https://raw.githubusercontent.com/arjunadas/arjunadas/refs/heads/main/images/Troubleshooting_2025-07-01.png
+https://raw.githubusercontent.com/arjunadas/arjunadas/refs/heads/main/images/Ansible_2025-06-20.png
 
 **Траблшутинг: настройка сетевых политик**
 https://raw.githubusercontent.com/arjunadas/arjunadas/refs/heads/main/images/Troubleshooting_2025-07-01.png
