@@ -39,7 +39,13 @@ DNS, DHCP, AD, GPO, DFS и далее
 - 🌱 I’m currently learning:
 [https://rebrainme.com/devops/](https://rebrainme.com/devops/)
 
-- 💬 My certs
+- 💬 My certs:
+
+**Ansible:**
+https://raw.githubusercontent.com/arjunadas/arjunadas/refs/heads/main/images/Troubleshooting_2025-07-01.png
+
+**Траблшутинг: настройка сетевых политик**
+https://raw.githubusercontent.com/arjunadas/arjunadas/refs/heads/main/images/Troubleshooting_2025-07-01.png
 
 **Linux:**
 https://raw.githubusercontent.com/arjunadas/arjunadas/main/images/yodo.im_linux_certificate.png
