@@ -8,7 +8,8 @@ Ansible, Ansible Molecule,
 Git,
 Gitlab,
 Docker, Docker compose,
-K8s Native, Deckhouse
+K8s Native, Deckhouse,
+Terraform
 
 BD:
 Postgresql,
@@ -22,12 +23,12 @@ Rabbitmq
 Zabbix, Grafana
 
 VM:
-Hyper-V, VMware
+Hyper-V, VMware, Proxmox
 
 Инфраструктура:
 DNS, DHCP, AD, GPO, DFS и далее
 
-Стаж DevOps: 2 года
+Стаж DevOps: 4 года
 
 Стаж сис-адм: 15+ лет
 
